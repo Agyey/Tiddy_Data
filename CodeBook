@@ -3,6 +3,7 @@ Features in the Final tiddy data
 Activity - 6 Possible Activities
 Subject - 30 Subject IDs
 
+Measurement with mean or Standard Deviations
 
 tBodyAcc-mean()-X
 tBodyAcc-mean()-Y
@@ -83,3 +84,10 @@ fBodyBodyGyroMag-meanFreq()
 fBodyBodyGyroJerkMag-mean()
 fBodyBodyGyroJerkMag-std()
 fBodyBodyGyroJerkMag-meanFreq()
+angle(tBodyAccMean,gravity)
+angle(tBodyAccJerkMean),gravityMean)
+angle(tBodyGyroMean,gravityMean)
+angle(tBodyGyroJerkMean,gravityMean)
+angle(X,gravityMean)
+angle(Y,gravityMean)
+angle(Z,gravityMean)
