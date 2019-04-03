@@ -8,15 +8,15 @@
 labels <- read.table("./UCI HAR Dataset/activity_labels.txt")
 ```
 ## Reading test dataset
-## Reading X_test.txt to test 
+### Reading X_test.txt to test 
 ```
 test <- read.table("./UCI HAR Dataset/test/X_test.txt")
 ```
-## Reading y_test.txt to test_y for activity values
+### Reading y_test.txt to test_y for activity values
 ```
 test_y <- read.table("./UCI HAR Dataset/test/y_test.txt")
 ```
-## Reading subject_test.txt to subject_test for subject IDs
+### Reading subject_test.txt to subject_test for subject IDs
 ```
 subject_test <- read.table("./UCI HAR Dataset/test/subject_test.txt")
 ```
@@ -35,15 +35,15 @@ test$Activity <- factor(test$Activity,levels = c(1,2,3,4,5,6), labels = labels$V
 ```
 
 ## Reading train dataset
-## Reading X_train.txt to train
+### Reading X_train.txt to train
 ```
 train <- read.table("./UCI HAR Dataset/train/X_train.txt")
 ```
-## Reading y_train.txt to train_y for activity values
+### Reading y_train.txt to train_y for activity values
 ```
 train_y <- read.table("./UCI HAR Dataset/train/y_train.txt")
 ```
-## Reading subject_test.txt to subject_train for subject IDs
+### Reading subject_test.txt to subject_train for subject IDs
 ```
 subject_train <- read.table("./UCI HAR Dataset/train/subject_train.txt")
 ```
