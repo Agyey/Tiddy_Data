@@ -39,9 +39,10 @@ feature <- read.table("./UCI HAR Dataset/features.txt")
 colnames(data) <- c(as.character(feature$V2),"Activity","Subject")
 
 # only extracting mean and standard deviation of measurements
-mean_std_data <- data[grep("(std)|(mean)|(Activity)|(Subject)",colnames(data))]
+mean_std_data <- data[grep("(std)|(Mean)|(mean)|(Activity)|(Subject)",colnames(data))]
 
 # grouping by acitivity and subject and finding mean of all the values
 activity <- group_by(mean_std_data,Activity)
 subject <- group_by(mean_std_data,Subject)
-set <- aggregate(activity[1:79],list(activity$Activity,activity$Subject),mean)
+set <- aggregate(activity[1:86],list(activity$Activity,activity$Subject),mean)
+set <- rename(set,Activity = Group.1,Subject = Group.2)
